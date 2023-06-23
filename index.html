@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateliê Maroka</title>
+    <!-- BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- LINKS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="js/progressbar.min.js">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+<body>
+    <header>
+        <div class="container" id="nav-container">
+    <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="#" class="navbar-brand">
+                    <img id="logo" src="imagensAtelieMaroka/logo.jpg" alt="Ateliê Maroka"> 
+                </a>
+                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation"> 
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a href="#mainSlider" class="nav-item nav-link" id="home-menu">HOME</a>
+                        <a href="#about-area" class="nav-item nav-link" id="about-menu">SOBRE NÓS</a>
+                        <a href="#about-area2" class="nav-item nav-link" id="about-menu">MARA</a>
+                        <a href="#featured-container" class="nav-item nav-link" id="portifolio-menu">TRABALHOS</a>
+                        <a href="#contact-area" class="nav-item nav-link" id="contact-menu">FALE CONOSCO</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Slider -->
+    <div class="container-fluid">
+      <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">       
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2"></button>
+            </div>                       
+          <div class="carousel-inner">
+          <div class="carousel-item active">
+                  <img src="imagensAtelieMaroka/cerâmicaBaner.jpg" class="d-block w-100" alt="Aulas de Cerâmica">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h2>Aulas de Cerâmica</h2>
+                      <p>materiais e queimas inclusos</p>
+                  </div>
+              </div>
+              <div class="carousel-item  ">
+                  <img src="imagensAtelieMaroka/aulasPintura.jpg" class="d-block w-100" alt="Aulas de Pintura">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h2>Aulas de Pintura</h2>
+                      <p>materias e tintas inclusos</p>
+                  </div>
+          </div>       
+              <div class="carousel-item  ">
+                  <img src="imagensAtelieMaroka/aulasPorcelana.jpg" class="d-block w-100" alt="Aulas de Porcelana">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h2>Aulas de Porcelana</h2>
+                      <p>materiais e tintas inclusos</p>
+                  </div>
+              </div>
+          </div>
+          <a href="#mainSlider" class="carousel-control-prev" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a href="#mainSlider" class="carousel-control-next" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+      </div>
+  </div>
+        <!-- Sobre o Ateliê -->
+        <div id="about-area">
+            <div class="container">
+                <div class="row">
+                  <div class="col-12"> 
+                    <h3 class="main-title">Sobre o Ateliê</h3>
+                  </div>
+                  <div class="col-md-6">
+                    <img class="img-fluid" src="imagensAtelieMaroka/fotoAtelie_resized.jpg" alt="Ateliê Maroka">
+                  </div>
+                  <div class="col-md-6">
+                    <h3 class="about-title">Aqui sua arte se torna realidade</h3>
+                    <p>Ateliê e escola de arte e criatividade presente em São José do Rio Preto há mais de 10 anos.</p>
+                    <p>Nossos aulas são adaptadas aos alunos e seus propósitos.</p>
+                    <p>Contato direto com a artísta plástica, artesã e decoradora Mara Chiavegatti.</p>
+                    <p>Veja nossos diferenciais:</p>
+                    <ul id="about-list">
+                      <li><i class="fas fa-check"></i> Ótimos materiais fornecidos durante a aula</li>
+                      <li><i class="fas fa-check"></i> Aulas adaptadas aos alunos e seu propósito</li>
+                      <li><i class="fas fa-check"></i> Espaço organizado e com ótima localização</li>
+                      <li><i class="fas fa-check"></i> Sistema de pagamento flexível</li>
+                      <li><i class="fas fa-check"></i> Mídias digitais atualizadas e bem cuidadas</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- Sobre a MARA -->
+          <div id="about-area2">
+            <div class="container">
+                <div class="row">
+                  <div class="col-12"> 
+                    <h3 class="main-title">Sobre a Mara</h3>
+                  </div>
+                  <div class="col-md-6">
+                    <img class="img-fluid" src="imagensAtelieMaroka/maraExposicao.jpg" alt="Ateliê Maroka">
+                  </div>
+                  <div class="col-md-6">
+                    <h3 class="about-title">Mara Chiavegatti:</h3>
+                    <p>"Sou artista plástica, artesã e decoradora desde que me conheço por gente. Amo as artes e ponho em prática, no trabalho, meu talento e minha criatividade. Sinto prazer genuino em acompanhar o desenvolvimento das potencialidades de cada um dos meus alunos. Com minhas pinturas em tela já participei de exposições nacionais e internacionais em São José do Rio Preto, São Paulo, Curitiba, Paris, Genebra e Lichtenstein, entre outras." </p>
+                    <p>Experiência com o ateliê e escola de arte em São José do Rio Preto há mais de 10 anos.</p>
+                    <p></p>
+                    
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- Projetos -->
+          <div class="container" id="featured-container">
+            <div class="col-12">
+              <h3 class="title primary-color">Trabalhos em Destaque</h3>
+              <p class="subtitle secondary-color">
+                Conheça nossas artes:
+              </p>
+            </div>
+            <div class="col-12" id="featured-images">
+              <div class="row g-4">
+                <div class="col-12 col-md-4">
+                  <img src="imagensAtelieMaroka/exposicao.jpg" alt="Projeto 1" class="img-fluid" />
+                  <div class="banner-content">
+                    <p class="secondary-color">Exposição</p>
+                    <h3>Guarda Chuva</h3>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <img src="imagensAtelieMaroka/pintura1.jpg" alt="Projeto 2" class="img-fluid" />
+                  <div class="banner-content">
+                    <p class="secondary-color">Pintura</p>
+                    <h3>Bicicleta no Verão</h3>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <img src="imagensAtelieMaroka/ceramicasArvore.jpg" alt="Projeto 3" class="img-fluid" />
+                  <div class="banner-content">
+                    <p class="secondary-color">Cerâmica</p>
+                    <h3>Árvores</h3>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <img src="imagensAtelieMaroka/exposicao2.jpg" alt="Projeto 4" class="img-fluid" />
+                  <div class="banner-content">
+                    <p class="secondary-color">Exposição</p>
+                    <h3>Natureza</h3>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <img src="imagensAtelieMaroka/pintura3.jpg" alt="Projeto 5" class="img-fluid" />
+                  <div class="banner-content">
+                    <p class="secondary-color">Pintura</p>
+                    <h3>Pássaros</h3>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <img src="imagensAtelieMaroka/canecasDeCeramica.jpg" alt="Projeto 6" class="img-fluid" />
+                  <div class="banner-content">
+                    <p class="secondary-color">Cerâmica</p>
+                    <h3>Canecas</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- RODAPÉ -->
+          <footer>
+            <div id="contact-area">
+              <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h3 class="main-title">Entre em contato conosco</h3>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                      <i class="fas fa-phone"></i>
+                      <p><span class="contact-tile">Ligue para:</span> (17)99113-8297</p>
+                      <p><span class="contact-tile">Horários:</span> 8:00 - 19:00</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                      <i class="fas fa-envelope"></i>
+                      <p><span class="contact-tile">Envie um email:</span> marokaarte@gmail.com</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <p><span class="contact-tile">Venha tomar um café:</span> R. Cap. João Gômide, 139 - Vila Aurora, São José do Rio Preto - SP, 15014-320</p>
+                    </div>
+                    
+                  </div>
+              </div>
+            </div>
+          </footer>
+          <script src="js/script.js"></script>
+</body>
+</html>
